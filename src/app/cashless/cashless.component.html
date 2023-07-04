@@ -1,0 +1,45 @@
+<h4 class="centercontent" style="margin-top: 3%;">CASHLESS DETAILS </h4><br>
+<div class="centercontent" style="margin-top: 7%;">
+          <table *ngIf="robj" cellpadding="10px" >
+            <tr >
+                <th> ID</th>
+                <th> User Name</th>
+                <th> Date of Birth</th>
+                <th> Email ID</th>
+               
+            </tr>
+            <tr>
+                <tr *ngFor="let i of robj">
+        
+                <td>{{i.ID}}</td>
+                <td>{{i.UserName}}</td>      
+                <td>{{i.Date_of_Birth}}</td>
+                <td>{{i.Email_id}}</td>
+                
+                <td><button (click)="apply()" >Apply</button> </td><br>
+               
+    
+            </table>    
+</div>      
+  
+<div class="formcenter" style="margin-top: 10%;">
+    <div class="form ">
+        <form [formGroup]="form" >
+
+            <div class="input-container ic1">
+                <input type="number" class="input" [(ngModel)]="application.ID" id="applicationno" formControlName="applicationno" required="[0-9]" placeholder=" ">
+                <div class="cut"></div>
+                <label for="Policy Number" class="placeholder">Policy Number</label>
+          <button style="margin-top:20%;margin-left: 30%;" (click)="addrdet1()" [disabled]="!form.valid">Search</button>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+          <button style="margin-top: 20%;margin-left: -25%;" (click)="getonereg()" [disabled]="!form.valid">Show</button>
+        </div>
+        </form>
+      </div>
+</div>  
+
+  <router-outlet></router-outlet>
+
+
+
+
+  

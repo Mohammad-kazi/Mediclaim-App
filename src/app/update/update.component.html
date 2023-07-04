@@ -1,0 +1,51 @@
+<h4 class="centercontent">UPDATE DETAILS </h4><br>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<div class="formcenter" style="margin-top: 7%;">
+    <div class="form ">
+        <form [formGroup]="form">
+
+        <div class="input-container ic1">
+          <input [(ngModel)] = "register.ID" formControlName="policyno" class="input" type="number" required="[0-9]" placeholder=" " >
+          <div class="cut"></div>
+          <label for="policynumber" class="placeholder">Policy Number</label>
+        </div>
+
+        <div class="input-container ic2"> 
+          <input [(ngModel)] = "register.Email_id" formControlName="emailid" class="input" type="emailid" placeholder=" " />
+          <div class="cut"></div>
+          <label for="Email Id" class="placeholder">Email ID</label>
+        </div>
+
+        <div class="input-container ic2">
+            <input [(ngModel)] = "register.Phone_No" formControlName="contactno" class="input" type="number" required="[0-9]" placeholder=" " />
+            <div class="cut"></div>
+            <label for="Phone Number" class="placeholder">Phone Number</label>
+        </div>
+        
+        <div class="input-container ic2">
+            <input [(ngModel)]="register.City" formControlName="city" class="input" required="[A-Za-z]" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="City" class="placeholder">City</label>
+        </div>
+
+        <div class="input-container ic2">
+            <input [(ngModel)]="register.Pincode" formControlName="pincode" class="input" type="number"  required="[0-9]" placeholder=" " />
+            <div class="cut"></div>
+            <label for="Pincode" class="placeholder">Pincode</label>
+        </div>
+
+        <div class="centercontent"><button (click) = "updreg()" [disabled]="!form.valid"  style="margin-top:33%;" >Update</button></div>
+        </form>
+      </div>
+</div>
+
+
+
+     
+      <router-outlet></router-outlet>
+    
+
+
+

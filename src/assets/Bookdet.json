@@ -1,0 +1,28 @@
+[
+    {
+        "bid":"B001",
+        "bname":"HTML Book",
+        "bprice":1000
+        
+    },
+    {
+        "bid":"B002",
+        "bname":"SQL Book",
+        "bprice":500
+    },
+    {
+        "bid":"B003",
+        "bname":"ASP.NET Book",
+        "bprice":1200
+    },
+    {
+        "bid":"B004",
+        "bname":"C# Book",
+        "bprice":750
+    },
+    {
+        "bid":"B005",
+        "bname":"JAVA Book",
+        "bprice":950
+    }
+]

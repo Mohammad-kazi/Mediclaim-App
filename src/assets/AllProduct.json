@@ -1,0 +1,26 @@
+[
+    {
+        "Pid":"P001",
+        "Pname":"Computer",
+        "Price":45000,
+        "Category":"Electronics"
+    },
+    {
+        "Pid":"P002",
+        "Pname":"Dell-Laptop",
+        "Price":75000,
+        "Category":"Electronics"
+    },
+    {
+        "Pid":"P003",
+        "Pname":"HP-Laptop",
+        "Price":65000,
+        "Category":"Electronics"
+    },
+    {
+        "Pid":"P004",
+        "Pname":"LED",
+        "Price":70000,
+        "Category":"Electronics"
+    }
+]

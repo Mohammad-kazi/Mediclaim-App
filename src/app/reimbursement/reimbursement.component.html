@@ -1,0 +1,34 @@
+
+<h4 class="centercontent" style="margin-top: 3%;">REMIBURSEMENT DETAILS </h4><br>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+<div class="formcenter" style="margin-top: 8%;">
+    <div class="form " >
+        <form [formGroup]="form">
+
+        <div class="input-container ic1">
+          <input [(ngModel)] = "obj.ID" formControlName="polyno" class="input" type="number" required="[0-9]" placeholder=" " >
+          <div class="cut"></div>
+          <label for="Policy Number" class="placeholder">Policy Number</label>
+        </div>
+
+        <div class="input-container ic2">
+          <input [(ngModel)] = "obj.Billing_no" formControlName="billno" class="input" type="number" required="[0-9]" placeholder=" " />
+          <div class="cut"></div>
+          <label for="Bill Number" class="placeholder">Bill Number</label>
+        </div>
+
+        <div class="input-container ic2">
+            <input [(ngModel)] = "obj.Billing_amt" formControlName="billingamount" class="input" type="number" required="[0-9]" placeholder=" " />
+            <div class="cut"></div>
+            <label for="Bill Amount" class="placeholder">Bill Amount</label>
+        </div>
+        
+        <div class="centercontent"><button style="margin-top:-10%;" [disabled]="!form.valid" (click)="saverdet()">Apply</button></div>
+        </form>
+      </div>
+</div>
+       
+        
+
